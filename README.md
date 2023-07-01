@@ -1,5 +1,5 @@
 # FIFA 21 DATA CLEANING WITH SQL
-![](intro)
+![](intro.png)
 ## Introduction
 This project demonstrates the power and capabilities of SQL in performing data-cleaning tasks. SQL is specifically designed for working with databases and large datasets. It provides efficient query processing, making it well-suited for handling substantial amounts of data during the cleaning process. SQL queries are also explicit and reproducible. By saving and documenting the cleaning steps as SQL scripts, one can easily repeat the process on new data or share the cleaning workflow with others.
 
