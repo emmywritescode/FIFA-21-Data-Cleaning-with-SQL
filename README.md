@@ -36,5 +36,14 @@ It was observed that the special character CHAR(10) along with occurrences of '1
  Resulting outcome     |
 :---------------------:|
  ![](club1.png)        |
+ ### Cleaning the 'Contract' column
+ The 'Contract' column was observed to have a delimiter that indicated the beginning and end of each player's contract, while some were on loan. Two new columns were created 'ContractStart' and 'ContractEnd' columns to store the extracted values. Upon keen observation, the year in the 'Joined' column matched the 'ContractStart' for each player and this was used in completing the column. The year in the 'Loan Date End' column was also extracted to fill the 'ContractEnd' column for players on loan.
+ Update query          |    
+:---------------------:|
+  ![](contract2.png)   | 
+  
+ Resulting outcome     |
+:---------------------:|
+ ![](contract1.png)    |
 
 
