@@ -12,7 +12,17 @@ The purpose of data cleaning, also known as data cleansing or data scrubbing, is
 ### Importing the data set
 The CSV file was carefully imported into Microsoft SQL Server Management Studio using the SQL Server Import and Export Wizard. To eliminate the problem of character encoding plaguing the data set, the 'code page' was changed from '1252 (ANSI Latin-I)' to '65001 (UTF-8)' on the wizard's dialog box. The data type of the columns was also changed to the 'Unicode string'.
 ### Retrieving the table information
-The stored procedure 'sp_help' was used to get a quick summary of the data set. This provided details such as the columns in the table, their data types, any indexes or constraints defined on the table, and other relevant information about the structure of the table.
+The stored procedure 'sp_help' was used to get a summary of the data set. This provided details such as the columns in the table, their data types, any indexes or constraints defined on the table, and other relevant information about the structure of the table.
  Query                 |     Output
 :---------------------:|:---------------------:
   ![](table_info.png)  | ![](table_result.png) 
+Additionally, to get a quick overview of the table, the appropriate query was written to view and count the rows of the data set.
+## Cleaning the special character in 'Name' column
+Although changing the character encoding to UTF-8 took care of many occurrences of the special characters. There were still some instances that were yet to be taken care of. A new column 'NewName' was created to store the cleaned values.
+ Update query          |     Resulting outcome
+:---------------------:|:---------------------:
+  ![](name1.png)       | ![](name2.png) 
+
+
+
+
