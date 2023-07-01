@@ -20,13 +20,21 @@ The stored procedure 'sp_help' was used to get a summary of the data set. This p
 Additionally, to get a quick overview of the table, the appropriate query was written to view and count the rows of the data set.
 ### Cleaning the special character in the 'Name' column
 Although changing the character encoding to UTF-8 took care of many occurrences of the special characters. There were still some instances that were yet to be taken care of. A new column 'NewName' was created to store the cleaned values.
- Update query          |     Resulting outcome
-:---------------------:|:---------------------:
-  ![](name2.png)       | ![](name1.png) 
+ Update query          |    
+:---------------------:|
+  ![](name2.png)       | 
+  
+ Resulting outcome     |
+:---------------------:|
+ ![](name1.png)        |
 ### Removing the leading white space and numerical characters in the 'Club' column
 It was observed that the special character CHAR(10) along with occurrences of '1. ' were in the front of many entries in the 'Club' column. The REPLACE function was used to clean the special character while a CTE was written to clean the column further. A new column was created 'NewClub' to store the cleaned values.
- Update query          |     Resulting outcome
-:---------------------:|:---------------------:
-  ![](club2.png)       | ![](club1.png) 
+ Update query          |    
+:---------------------:|
+  ![](club2.png)       | 
+  
+ Resulting outcome     |
+:---------------------:|
+ ![](club1.png)        |
 
 
