@@ -16,12 +16,13 @@ The stored procedure 'sp_help' was used to get a summary of the data set. This p
  Query                 |     Output
 :---------------------:|:---------------------:
   ![](table_info.png)  | ![](table_result.png) 
+
 Additionally, to get a quick overview of the table, the appropriate query was written to view and count the rows of the data set.
-## Cleaning the special character in 'Name' column
+## Cleaning the special character in the 'Name' column
 Although changing the character encoding to UTF-8 took care of many occurrences of the special characters. There were still some instances that were yet to be taken care of. A new column 'NewName' was created to store the cleaned values.
  Update query          |     Resulting outcome
 :---------------------:|:---------------------:
-  ![](name1.png)       | ![](name2.png) 
+  ![](name2.png)       | ![](name1.png) 
 
 
 
