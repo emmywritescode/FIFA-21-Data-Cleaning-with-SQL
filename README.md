@@ -20,7 +20,7 @@ The stored procedure 'sp_help' was used to get a summary of the data set. This p
 Additionally, to get a quick overview of the table, the appropriate query was written to view and count the rows of the data set.
 ### Cleaning the special character in the 'Name' column
 Although changing the character encoding to UTF-8 took care of many occurrences of the special characters. There were still some instances that were yet to be taken care of. A new column 'NewName' was created to store the cleaned values.
- Update query          |    
+ UPDATE query          |    
 :---------------------:|
   ![](name2.png)       | 
   
@@ -29,21 +29,32 @@ Although changing the character encoding to UTF-8 took care of many occurrences 
  ![](name1.png)        |
 ### Removing the leading white space and numerical characters in the 'Club' column
 It was observed that the special character CHAR(10) along with occurrences of '1. ' were in the front of many entries in the 'Club' column. The REPLACE function was used to clean the special character while a CTE was written to clean the column further. A new column was created 'NewClub' to store the cleaned values.
- Update query          |    
+ UPDATE query          |    
 :---------------------:|
   ![](club2.png)       | 
   
  Resulting outcome     |
 :---------------------:|
  ![](club1.png)        |
- ### Cleaning the 'Contract' column
- The 'Contract' column was observed to have a delimiter that indicated the beginning and end of each player's contract, while some were on loan. Two new columns were created 'ContractStart' and 'ContractEnd' columns to store the extracted values. Upon keen observation, the year in the 'Joined' column matched the 'ContractStart' for each player and this was used in completing the column. The year in the 'Loan Date End' column was also extracted to fill the 'ContractEnd' column for players on loan.
- Update query          |    
+### Cleaning the 'Contract' column
+The 'Contract' column was observed to have a delimiter that indicated the beginning and end of each player's contract, while some were on loan. Two new columns were created 'ContractStart' and 'ContractEnd' columns to store the extracted values. Upon keen observation, the year in the 'Joined' column matched the 'ContractStart' for each player and this was used in completing the column. The year in the 'Loan Date End' column was also extracted to fill the 'ContractEnd' column for players on loan.
+ UPDATE query          |    
 :---------------------:|
   ![](contract2.png)   | 
   
  Resulting outcome     |
 :---------------------:|
  ![](contract1.png)    |
+### Converting entries in the 'Height' and 'Weight' columns to uniform values
+The height of players was measured in centimeters or feet and inches. Since more players had their height measured in centimeters, those measured in feet and inches were converted. A 'CASE' statement was used to achieve this and a new column 'NewHeight' was created to store the cleaned values. 
+
+The same approach was applied to the 'Weight' column. Players' weight was measured in kilograms or pounds and since more players had their weight measured in kilograms, those measured in pounds were converted. A new column 'NewWeight' was created to store the cleaned values.
+ UPDATE query          |    
+:---------------------:|
+  ![](conversion1.png) | 
+  
+ Resulting outcome     |
+:---------------------:|
+ ![](conversion2.png)  |
 
 
