@@ -69,7 +69,7 @@ The 'Value', 'Wage', Release Clause', and 'Hits' columns had this problem. Entri
 The 'WF', 'SM', and 'IR' columns all contained the star symbol which indicated each player's corresponding rating in the game. For the purpose of validity for analysis, the numerical values were extracted into new columns 'NewWF', 'NewSM', and 'NewIR.
 UPDATE query           |   Resulting outcome   |  
 :---------------------:|:---------------------:|
- ![](star1.png)        |  ![](star2.png)       |
+ ![](star2.png)        |  ![](star2.png)       |
   
 
 
