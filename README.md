@@ -65,3 +65,12 @@ The 'Value', 'Wage', Release Clause', and 'Hits' columns had this problem. Entri
  Resulting outcome     |
 :---------------------:|
  ![](num_value1.png)   |
+### Separating special characters from numerical values
+The 'WF', 'SM', and 'IR' columns all contained the star symbol which indicated each player's corresponding rating in the game. For the purpose of validity for analysis, the numerical values were extracted into new columns 'NewWF', 'NewSM', and 'NewIR.
+UPDATE query           |    
+:---------------------:|
+ ![](star1.png)        |  
+  
+ Resulting outcome     |
+:---------------------:|
+ ![](star2.png)        |
