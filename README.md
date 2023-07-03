@@ -70,7 +70,16 @@ The 'WF', 'SM', and 'IR' columns all contained the star symbol which indicated e
 UPDATE query           |   Resulting outcome   |  
 :---------------------:|:---------------------:|
  ![](star1.png)        |  ![](star2.png)       |
+### Checking and removing duplicate records
+A major aspect of the data cleaning process is the removal of duplicate records in the data set. However, one must always make sure that indeed a duplicate exists in the data set before proceeding to delete it.
+
+In this table, the duplicate check revealed that two players named 'Peng Wang' represented the same country, played for the same club, was of the same age, and had the same height. At first, this seemed like a duplicate record, but upon further observation of this record and visiting the link in the 'playerUrl' column for additional information, it was clear beyond reasonable doubt that they were different players.
+ Query                 |    
+:---------------------:|
+  ![](duplicate1.png)  |  
   
+ Resulting outcome     |
+:---------------------:|
+ ![](duplicate2.png)   |
+### Dropping irrelevant columns
 
-
- 
