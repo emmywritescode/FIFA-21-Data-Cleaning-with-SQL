@@ -46,7 +46,7 @@ The 'Contract' column was observed to have a delimiter that indicated the beginn
 :---------------------:|
  ![](contract1.png)    |
 ### Converting entries in the 'Height' and 'Weight' columns to uniform values
-The height of players was measured in centimeters or feet and inches. Since more players had their height measured in centimeters, those measured in feet and inches were converted. A 'CASE' statement was used to achieve this and a new column 'NewHeight' was created to store the cleaned values. 
+The height of players was measured in centimeters or feet and inches. Since more players had their height measured in centimeters, those measured in feet and inches were converted for the purpose of consistency. A 'CASE' statement was used to achieve this and a new column 'NewHeight' was created to store the cleaned values. 
 
 The same approach was applied to the 'Weight' column. Players' weight was measured in kilograms or pounds and since more players had their weight measured in kilograms, those measured in pounds were converted. A new column 'NewWeight' was created to store the cleaned values.
  UPDATE query          |    
@@ -56,5 +56,12 @@ The same approach was applied to the 'Weight' column. Players' weight was measur
  Resulting outcome     |
 :---------------------:|
  ![](conversion2.png)  |
-
-
+### Converting instances of 'K' to Thousands and 'M' to Millions in affected columns
+The 'Value', 'Wage', Release Clause', and 'Hits' columns had this problem. Entries ending with 'K' were multiplied by 1000 and those ending with 'M' were multiplied by 1000000 for the purpose of accuracy. New columns 'NewValue', 'NewWage', 'ReleaseClause', and 'NewHits' were added to the table to store the updated changes.
+ UPDATE query          |    
+:---------------------:|
+  ![](num_value2.png)  |  
+  
+ Resulting outcome     |
+:---------------------:|
+ ![](num_value1.png)   |
