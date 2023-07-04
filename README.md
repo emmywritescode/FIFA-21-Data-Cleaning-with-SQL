@@ -71,15 +71,24 @@ UPDATE query           |   Resulting outcome   |
 :---------------------:|:---------------------:|
  ![](star1.png)        |  ![](star2.png)       |
 ### Checking and removing duplicate records
-A major aspect of the data cleaning process is the removal of duplicate records in the data set. However, one must always make sure that indeed a duplicate exists in the data set before proceeding to delete it.
+A major aspect of the data cleaning process is the removal of duplicate records in the data set in order to maintain data accuracy and integrity. However, one must always make sure that there is indeed a duplicate record before proceeding to delete it.
 
-In this table, the duplicate check revealed that two players named 'Peng Wang' represented the same country, played for the same club, was of the same age, and had the same height. At first, this seemed like a duplicate record, but upon further observation of this record and visiting the link in the 'playerUrl' column for additional information, it was clear beyond reasonable doubt that they were different players.
+In this table, the duplicate check revealed that two players named 'Peng Wang' represented the same country, played for the same club, was of the same age, and had the same height. At first, this seemed like a duplicate record, but upon further observation of this record and upon visiting the link in the 'playerUrl' column for additional information, it was clear beyond reasonable doubt that they were different players.
  Query                 |    
 :---------------------:|
   ![](duplicate1.png)  |  
   
- Resulting outcome     |
+ Output                |
 :---------------------:|
  ![](duplicate2.png)   |
 ### Dropping irrelevant columns
+Another aspect of the data cleaning process is the dropping of irrelevant columns. In order to improve the data analysis process and enhance model performance, it is important to drop irrelevant columns. Doing this will help reduce noise and clutter in the data set and thus improve computational efficiency. However, one must be sure a column is truly irrelevant before performing a permanent drop.
 
+In this table, the 'Contract' column and the 'Loan Date End' column can be considered irrelevant since data has been extracted from them to create new columns with consistent values. The 'photoUrl' column also contains invalid URLs and is hence irrelevant.
+ Query                 |    
+:---------------------:|
+  ![](irrelevant.png)  |
+## Conclusion
+Through completing this data cleaning project using SQL after having previously done the same task in Microsoft Excel, I have greatly learned and honed my SQL skills. This project provided me with the opportunity to leverage the power and flexibility of SQL for data cleaning and manipulation. 
+
+The experience of completing this data cleaning project with SQL has not only expanded my technical skills but also provided me with a valuable skill set applicable to various data-related tasks. The ability to work with SQL gives me the confidence to tackle more complex data cleaning and manipulation projects in the future, enabling me to be more effective and efficient in my data analysis endeavors.
