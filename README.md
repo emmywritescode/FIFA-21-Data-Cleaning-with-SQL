@@ -19,7 +19,7 @@ The stored procedure 'sp_help' was used to get a summary of the data set. This p
 
 Additionally, to get a quick overview of the table, the appropriate query was written to view and count the rows of the data set.
 ### Cleaning the special character in the 'Name' column
-Although changing the character encoding to UTF-8 took care of many occurrences of the special characters. There were still some instances that were yet to be taken care of. The resulting outcome of this change can be seen in 'NewName' below.
+Although changing the character encoding to UTF-8 took care of many occurrences of the special characters. There were still some instances that were yet to be taken care of. A special character 'NCHAR(65533)' was noticed in some entries and it was replaced by the first character in the corresponding LongName column. The resulting outcome of making this change can be seen in 'NewName' below.
  UPDATE query          |    
 :---------------------:|
   ![](name2.png)       | 
