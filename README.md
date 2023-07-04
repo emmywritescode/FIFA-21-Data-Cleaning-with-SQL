@@ -48,7 +48,7 @@ The 'Contract' column was observed to have a delimiter that indicated the beginn
 ### Converting entries in the 'Height' and 'Weight' columns to uniform values
 The height of players was measured in centimeters or feet and inches. Since more players had their height measured in centimeters, those measured in feet and inches were converted for the purpose of consistency. A 'CASE' statement was used to achieve this and the approximate conversion factor was applied.
 
-The same approach was applied to the 'Weight' column. Players' weight was measured in kilograms or pounds and since more players had their weight measured in kilograms, those measured in pounds were converted. 
+The same approach was applied to the 'Weight' column. Players' weight was measured in kilograms or pounds and since more players had their weight measured in kilograms, those measured in pounds were converted. Below, you can observe the contrast between the cleaned column and the dirty column.
  UPDATE query          |    
 :---------------------:|
   ![](conversion1.png) | 
@@ -57,7 +57,7 @@ The same approach was applied to the 'Weight' column. Players' weight was measur
 :---------------------:|
  ![](conversion2.png)  |
 ### Converting instances of 'K' to Thousands and 'M' to Millions in affected columns
-The 'Value', 'Wage', Release Clause', and 'Hits' columns had this problem. Entries ending with 'K' were multiplied by 1000 and those ending with 'M' were multiplied by 1000000 for the purpose of accuracy and to enable data aggregation.
+The 'Value', 'Wage', Release Clause', and 'Hits' columns had this problem. Entries ending with 'K' were multiplied by 1000 and those ending with 'M' were multiplied by 1000000 for the purpose of accuracy and to enable data aggregation. Below, you can observe the contrast between the cleaned column and the dirty column.
  UPDATE query          |    
 :---------------------:|
   ![](num_value2.png)  |  
