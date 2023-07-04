@@ -28,7 +28,7 @@ Although changing the character encoding to UTF-8 took care of many occurrences 
 :---------------------:|
  ![](name1.png)        |
 ### Removing the leading white space and numerical characters in the 'Club' column
-It was observed that the special character CHAR(10) along with occurrences of '1. ' were in the front of many entries in the 'Club' column. The REPLACE function was used to clean the special character while a CTE was written to perform further cleaning operations and extract clean data into a temporary table. The image below shows the difference between the cleaned column and the dirty column.
+It was observed that the special character CHAR(10) along with occurrences of '1. ' were in the front of many entries in the 'Club' column. The REPLACE function was used to clean the special character while a CTE was written to perform further cleaning operations and extract clean data into a temporary table. The difference between the cleaned column and the dirty column can be observed below.
  UPDATE query          |    
 :---------------------:|
   ![](club2.png)       | 
