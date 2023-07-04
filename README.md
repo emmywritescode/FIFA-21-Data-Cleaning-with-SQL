@@ -57,7 +57,7 @@ The same approach was applied to the 'Weight' column. Players' weight was measur
 :---------------------:|
  ![](conversion2.png)  |
 ### Converting instances of 'K' to Thousands and 'M' to Millions in affected columns
-The 'Value', 'Wage', Release Clause', and 'Hits' columns had this problem. Entries ending with 'K' were multiplied by 1000 and those ending with 'M' were multiplied by 1000000 for the purpose of accuracy. New columns 'NewValue', 'NewWage', 'ReleaseClause', and 'NewHits' were added to the table to store the updated changes.
+The 'Value', 'Wage', Release Clause', and 'Hits' columns had this problem. Entries ending with 'K' were multiplied by 1000 and those ending with 'M' were multiplied by 1000000 for the purpose of accuracy and to enable data aggregation.
  UPDATE query          |    
 :---------------------:|
   ![](num_value2.png)  |  
