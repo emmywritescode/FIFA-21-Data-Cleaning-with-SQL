@@ -84,10 +84,12 @@ In this table, the duplicate check revealed that two players named 'Peng Wang' r
 ### Dropping irrelevant columns
 Another aspect of the data cleaning process is the dropping of irrelevant columns. In order to improve the data analysis process and enhance model performance, it is important to drop irrelevant columns. Doing this will help reduce noise and clutter in the data set and thus improve computational efficiency. However, one must be sure a column is truly irrelevant before performing a permanent drop.
 
-In this table, the 'Contract' column and the 'Loan Date End' column can be considered irrelevant since data has been extracted from them to create new columns with consistent values. The 'photoUrl' column also contains invalid URLs and is hence irrelevant.
+In this table, the 'photoUrl' column can be considered irrelevant since it contains invalid URLs.
  Query                 |    
 :---------------------:|
-  ![](irrelevant.png)  |
+  ![](drop.png)        |
+
+ NB: The SQL script used for cleaning the data is available in my [repository]() for reuse.
 ## Conclusion
 Through completing this data cleaning project using SQL after having previously done the same task in Microsoft Excel, I have greatly learned and honed my SQL skills. This project provided me with the opportunity to leverage the power and flexibility of SQL for data cleaning and manipulation. 
 
