@@ -19,7 +19,7 @@ The stored procedure 'sp_help' was used to get a summary of the data set. This p
 
 Additionally, to get a quick overview of the table, the appropriate query was written to view and count the rows of the data set.
 ### Cleaning the special character in the 'Name' column
-Although changing the character encoding to UTF-8 took care of many occurrences of the special characters. There were still some instances that were yet to be taken care of. A special character 'NCHAR(65533)' was noticed in some entries and it was replaced by the first character in the corresponding LongName column. The resulting outcome of making this change can be seen in 'NewName' below.
+Although changing the character encoding to UTF-8 took care of many occurrences of the special characters. There were still some instances that were yet to be taken care of. A special character 'NCHAR(65533)' was noticed in some entries and it was replaced by the first character in the corresponding LongName column. The resulting outcome can be observed in the 'NewName' column below.
  UPDATE query          |    
 :---------------------:|
   ![](name2.png)       | 
@@ -28,7 +28,7 @@ Although changing the character encoding to UTF-8 took care of many occurrences 
 :---------------------:|
  ![](name1.png)        |
 ### Removing the leading white space and numerical characters in the 'Club' column
-It was observed that the special character CHAR(10) along with occurrences of '1. ' were in the front of many entries in the 'Club' column. The REPLACE function was used to clean the special character while a CTE was written to clean the column further. A new column was created 'NewClub' to store the cleaned values.
+It was observed that the special character CHAR(10) along with occurrences of '1. ' were in the front of many entries in the 'Club' column. The REPLACE function was used to clean the special character while a CTE was written to perform further cleaning operations and extract clean data into a temporary table column. The image below shows the difference between the cleaned column and the dirty column.
  UPDATE query          |    
 :---------------------:|
   ![](club2.png)       | 
