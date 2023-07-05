@@ -89,7 +89,7 @@ In this table, the 'photoUrl' column can be considered irrelevant since it conta
 :---------------------:|
   ![](drop.png)        |
 
-NB: The full SQL script used for cleaning the data is available in my SQL Queries [repository](https://github.com/emmywritescode/SQL-Queries/blob/main/Adventure%20Works%20Cycles%202019.sql) for examination or reuse.
+NB: The full SQL script used for cleaning the data is available in my SQL Queries [repository](https://github.com/emmywritescode/SQL-Queries/blob/main/CLEANING%20FIFA%2021%20DATA%20SET.sql) for examination or reuse.
 ## Conclusion
 Through completing this data cleaning project using SQL after having previously done the same task in Microsoft Excel, I have greatly learned and honed my SQL skills. This project provided me with the opportunity to leverage the power and flexibility of SQL for data cleaning and manipulation. 
 
